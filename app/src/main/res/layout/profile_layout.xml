@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#981313"
+    android:foregroundTint="#8E2929"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="419dp"
+        android:layout_height="60dp"
+        android:background="@color/teal_700"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="54dp"
+        android:layout_height="11dp"
+        android:backgroundTint="#018786"
+        android:rotation="90"
+        android:rotationY="0"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="426dp"
+        android:layout_height="230dp"
+        app:cardCornerRadius="10dp"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="58dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:background="@color/teal_700"
+            android:elevation="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="35dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Billy Jhon"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/account__1_" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="424dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="288dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#951E1E"
+            android:scaleY="0.8"
+            app:cardBackgroundColor="#03A9F4"
+            app:cardCornerRadius="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:background="@drawable/burger_king_pic">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Burger King"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#951E1E"
+            android:scaleY="0.8"
+            app:cardBackgroundColor="#03A9F4"
+            app:cardCornerRadius="10dp" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:background="@drawable/macdonald_pic">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="McDonalds"
+                android:textAlignment="center"
+                android:textColor="#FBFBFB"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="361dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="369dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="359dp"
+            android:layout_height="202dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#90018786"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationY="14dp"
+                        app:srcCompat="@drawable/account__1_" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Boby Jhons"
+                        android:translationY="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        android:translationY="7dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="341dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:text="Ordered food from the machine, my number never appeared on the screen even though I had a receipt. Had to tell the staff and wait another 10 minutes. Staff are great but clearly there's something wrong with their system." />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/editTextNumber2"
+                            android:layout_width="22dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="15dp"
+                            app:srcCompat="@android:drawable/ic_dialog_map" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="-50dp"
+                            android:elevation="15dp"
+                            app:srcCompat="@drawable/burger_king_pic" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="359dp"
+            android:layout_height="183dp"
+            android:layout_gravity="center"
+            android:background="#90018786">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#90018786"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationY="14dp"
+                        app:srcCompat="@drawable/account__1_" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Boby Jhons"
+                        android:translationY="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        android:translationY="7dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="339dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Ordered food from the machine, my number never appeared on the screen even though I had a receipt. Had to tell the staff and wait another 10 minutes. Staff are great but clearly there's something wrong with their system." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextNumber"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/picture_frame" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Button" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
