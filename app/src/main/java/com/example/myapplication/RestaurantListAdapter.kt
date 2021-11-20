@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -33,6 +34,7 @@ class RestaurantListAdapter : RecyclerView.Adapter<RestaurantListAdapter.ViewHol
         val logo: ImageView = itemView.findViewById((R.id.logo))
         val card: CardView = itemView.findViewById(R.id.card)
         val reviewNum : TextView = itemView.findViewById(R.id.numReviews)
+        val review : RatingBar = itemView.findViewById(R.id.ratingBar)
     }
 
     override fun getItemCount(): Int {

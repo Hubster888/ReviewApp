@@ -7,14 +7,15 @@ public class Restaurant {
     private String rName;
     private String rLogo;
     private String rBackPic;
-    private int rReview;
+    private float rReview;
     private int rNumReview;
     private GeoPoint rLocation;
     private String rUid;
+    private float rDistance;
 
     public Restaurant() { } // Needed for Firebase
 
-    public Restaurant(String name, String logo, String back_pic, int review, int numReview, GeoPoint location, String uid) {
+    public Restaurant(String name, String logo, String back_pic, float review, int numReview, GeoPoint location, String uid) {
         rName = name;
         rLogo = logo;
         rBackPic = back_pic;
@@ -40,9 +41,9 @@ public class Restaurant {
 
     public void setBackPic(String backPic) { rBackPic = backPic; }
 
-    public int getReview() { return rReview; }
+    public float getReview() { return rReview; }
 
-    public void setReview(int review) { rReview = review; }
+    public void setReview(float review) { rReview = review; }
 
     public int getNumReview() { return rNumReview; }
 
