@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="latitude_key">lat</string>
+    <string name="longitude_key">long</string>
+    <string name="def_loc_key">0.0</string>
 </resources>

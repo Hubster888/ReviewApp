@@ -1,5 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import com.google.firebase.firestore.GeoPoint;
 
 public class Restaurant {
@@ -15,10 +18,10 @@ public class Restaurant {
 
     public Restaurant() { } // Needed for Firebase
 
-    public Restaurant(String name, String logo, String back_pic, float review, int numReview, GeoPoint location, String uid) {
+    public Restaurant(String name, String logo, String backPic, float review, int numReview, GeoPoint location, String uid) {
         rName = name;
         rLogo = logo;
-        rBackPic = back_pic;
+        rBackPic = backPic;
         rReview = review;
         rNumReview = numReview;
         rLocation = location;
@@ -52,5 +55,22 @@ public class Restaurant {
     public GeoPoint getLocation() { return rLocation; }
 
     public void setLocation(GeoPoint location) { rLocation = location; }
+
+    public float getDistance() { return rDistance; }
+
+    public void calculateDistance(float latitude, float longitude){
+        double restLat = rLocation.getLatitude();
+        double restLong = rLocation.getLongitude();
+
+        double theta = longitude - restLong;
+        double dist = Math.sin((latitude * Math.PI / 180.0)) * Math.sin((restLat * Math.PI / 180.0))
+                + Math.cos((latitude * Math.PI / 180.0))
+                * Math.cos((restLat * Math.PI / 180.0))
+                * Math.cos((theta * Math.PI / 180.0));
+        dist = Math.acos(dist);
+        dist = (dist * 180.0 / Math.PI);
+        dist = dist * 60 * 1.1515;
+        rDistance = (float) dist;
+    }
 
 }

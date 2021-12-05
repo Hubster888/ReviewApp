@@ -8,6 +8,12 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.core.content.ContextCompat.startActivity
+
+import android.content.Intent
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
+import androidx.core.content.ContextCompat.startActivity
 
 class RestaurantListAdapter : RecyclerView.Adapter<RestaurantListAdapter.ViewHolder>() {
 
@@ -35,6 +41,7 @@ class RestaurantListAdapter : RecyclerView.Adapter<RestaurantListAdapter.ViewHol
         val card: CardView = itemView.findViewById(R.id.card)
         val reviewNum : TextView = itemView.findViewById(R.id.numReviews)
         val review : RatingBar = itemView.findViewById(R.id.ratingBar)
+
     }
 
     override fun getItemCount(): Int {
